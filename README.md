@@ -1,20 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# BA99 — Gaming Platform
 
-# Run and deploy your AI Studio app
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/sanonahmed/samir99)
 
-This contains everything you need to run your app locally.
+Dark navy Bengali gaming entertainment platform featuring slots, fishing, live games, poker, sports, and lottery categories.
 
-View your app in AI Studio: https://ai.studio/apps/0d8c38d8-0fff-453a-95d8-9eb134c8fde5
+---
 
-## Run Locally
+## 🚀 Deploy to Render
 
-**Prerequisites:**  Node.js
+### Option 1: 1-Click Blueprint Deploy (Recommended)
+Click the button above or:
+1. Open [Render Blueprints](https://dashboard.render.com/blueprints/new).
+2. Connect your GitHub repository: `sanonahmed/samir99`.
+3. Render will automatically detect [`render.yaml`](render.yaml) and configure the static site, build command, and SPA routing rewrites.
+4. Click **Apply**.
 
+### Option 2: Manual Static Site Deploy
+1. Go to [Render Dashboard](https://dashboard.render.com/) and click **New +** > **Static Site**.
+2. Connect the `sanonahmed/samir99` repository.
+3. Fill in the deployment settings:
+   - **Name**: `ba99-gaming-platform` (or your choice)
+   - **Branch**: `main`
+   - **Build Command**: `npm run build`
+   - **Publish Directory**: `dist`
+4. Under **Redirects/Rewrites**:
+   - **Type**: `Rewrite`
+   - **Source**: `/*`
+   - **Destination**: `/index.html`
+5. Click **Create Static Site**.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 💻 Local Development
+
+**Prerequisites:** Node.js (v18+)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sanonahmed/samir99.git
+   cd samir99
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   ```

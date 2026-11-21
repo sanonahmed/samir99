@@ -1,0 +1,8 @@
+{
+  "name": "BA99 — Gaming Platform",
+  "description": "BA99 dark navy Bengali gaming entertainment platform featuring slots, fishing, live games, poker, sports, and lottery categories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

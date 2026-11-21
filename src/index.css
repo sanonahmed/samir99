@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ba-bg: #171B2B;
+  --color-ba-sidebar: #222A42;
+  --color-ba-header: #242C45;
+  --color-ba-card: #252D46;
+  --color-ba-red: #FF3035;
+  --color-ba-red-hover: #E6252A;
+  --color-ba-text: #FFFFFF;
+  --color-ba-text-secondary: #C1C9DC;
+  --color-ba-text-muted: #8993AC;
+  --color-ba-border: #343D58;
+  --color-ba-purple: #6635FF;
+
+  --font-bengali: "Hind Siliguri", "Noto Sans Bengali", "Outfit", system-ui, sans-serif;
+  --font-display: "Outfit", "Hind Siliguri", system-ui, sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: #171B2B;
+    color: #FFFFFF;
+    font-family: var(--font-bengali);
+    overflow-x: hidden;
+  }
+
+  button,
+  a,
+  input,
+  select {
+    font-family: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid #FF3035;
+    outline-offset: 2px;
+  }
+}
+
+/* Custom sleek dark scrollbar matching BA99 reference */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171B2B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #343D58;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475375;
+}
+
+/* BA99 Iconic Two-Tone Outlined Logo */
+.ba99-logo-ba {
+  background: linear-gradient(180deg, #FFF07C 0%, #FFB800 55%, #FF6B00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.75));
+}
+
+.ba99-logo-99 {
+  background: linear-gradient(180deg, #98F5FF 0%, #37C4FF 55%, #1A7CE6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.75));
+}
+
+/* Smooth Announcement Ticker Marquee */
+@keyframes ba99-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ba99-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+  animation: ba99-marquee 26s linear infinite;
+}
+
+.ticker-container:hover .animate-ba99-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ba99-marquee {
+    animation: none;
+  }
+}

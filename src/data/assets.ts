@@ -1,0 +1,32 @@
+export const ASSETS = {
+  banners: {
+    poseidon: '/src/assets/images/banner_poseidon_bonus_1795188194730.jpg',
+    vipCarnival: '/src/assets/images/banner_vip_carnival_1795188223741.jpg',
+    sportsArena: '/src/assets/images/banner_sports_arena_1795188195299.jpg',
+  },
+  games: {
+    superAce: '/src/assets/images/game_super_ace_1795188193666.jpg',
+    showdown: '/src/assets/images/game_showdown_1795188195679.jpg',
+    magicAce: '/src/assets/images/game_magic_ace_1795188194854.jpg',
+    circusJoker: '/src/assets/images/game_circus_joker_1795188212352.jpg',
+    boxingKing: '/src/assets/images/game_boxing_king_1795188194771.jpg',
+    anubisWrath: '/src/assets/images/game_anubis_wrath_1795188199446.jpg',
+    aviator: '/src/assets/images/game_aviator_1795188195231.jpg',
+    flyx: '/src/assets/images/game_flyx_1795188195229.jpg',
+    superElements: '/src/assets/images/game_super_elements_1795188197063.jpg',
+    fortuneGems: '/src/assets/images/game_fortune_gems_1795188198125.jpg',
+    aztec: '/src/assets/images/game_aztec_1795188197642.jpg',
+    pirateLegends: '/src/assets/images/game_pirate_legends_1795188501348.jpg',
+  },
+  categories: {
+    slots: '/src/assets/images/cat_slots_1795188196349.jpg',
+    fishing: '/src/assets/images/cat_fishing_1795188195759.jpg',
+    live: '/src/assets/images/cat_live_1795188197522.jpg',
+    poker: '/src/assets/images/cat_poker_1795188199441.jpg',
+    sports: '/src/assets/images/cat_sports_1795188197355.jpg',
+    lottery: '/src/assets/images/cat_lottery_1795188491217.jpg',
+  },
+  appShowcase: '/src/assets/images/app_mobile_showcase_1795188543254.jpg',
+  mobileZeus: '/src/assets/images/mobile_zeus_showcase_1795192641594.jpg',
+  mobileJackpot: '/src/assets/images/mobile_jackpot_banner_1795192395349.jpg',
+} as const;
